@@ -4,6 +4,14 @@ package questao2;
  */
 public class Estagiario extends Funcionario {
 
+    public Estagiario(String nome, double salarioBruto) {
+        super(nome, salarioBruto);
+    }
+
+    public Estagiario() {
+    }
+
+    
     @Override
     public double calcularSalarioLiquido() {
        

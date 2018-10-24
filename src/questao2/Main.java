@@ -11,6 +11,7 @@ public class Main {
         v.setQuantidadeDeVendas(99);
         v.calcularSalarioLiquido();
         
+        
         System.out.println(v.calcularSalarioLiquido());
         
     }   

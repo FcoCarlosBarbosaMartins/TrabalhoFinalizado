@@ -6,7 +6,22 @@ package questao2;
 public class Vendedor extends Funcionario {
     
     private int quantidadeDeVendas;
-   
+
+    public Vendedor(int quantidadeDeVendas, String nome, double salarioBruto) {
+        super(nome, salarioBruto);
+        this.quantidadeDeVendas = quantidadeDeVendas;
+    }
+
+    public Vendedor(String nome, double salarioBruto) {
+        super(nome, salarioBruto);
+    }
+
+    public Vendedor() {
+    }
+
+    
+
+    
     @Override
     public double calcularSalarioLiquido() {
         int bonus = 0;

@@ -14,6 +14,16 @@ package questao2;
 public class Funcionario {
     private String nome;
     private double salarioBruto;
+
+    public Funcionario(String nome, double salarioBruto) {
+        this.nome = nome;
+        this.salarioBruto = salarioBruto;
+    }
+
+    public Funcionario() {
+    }
+   
+    
     
     public double calcularSalarioLiquido(){
         double descontoImpostoRenda = 0;
