@@ -7,6 +7,18 @@ import java.util.Calendar;
 public class ContaPoupanca extends ContaBancaria{
     
     private int diaRendimento;
+
+    public ContaPoupanca(int diaRendimento, String numeroDaConta) {
+        super(numeroDaConta);
+        this.diaRendimento = diaRendimento;
+    }
+
+    public ContaPoupanca(String numeroDaConta) {
+        super(numeroDaConta);
+    }
+
+    public ContaPoupanca() {
+    }
     
     public void calcularRendimento(double taxaRendimento){
         

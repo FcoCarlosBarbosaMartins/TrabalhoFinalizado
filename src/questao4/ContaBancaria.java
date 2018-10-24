@@ -4,7 +4,14 @@ package questao4;
 public class ContaBancaria {
     private String numeroDaConta;
     private double saldo;
-    
+
+    public ContaBancaria(String numeroDaConta) {
+        this.numeroDaConta = numeroDaConta;
+    }
+
+    public ContaBancaria() {
+    }
+     
     public void depositar(double valor){
         if(valor > 0){
             saldo = saldo + valor;

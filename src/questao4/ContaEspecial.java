@@ -5,6 +5,18 @@ public class ContaEspecial extends ContaBancaria{
     
     private double limite;
 
+    public ContaEspecial(double limite, String numeroDaConta) {
+        super(numeroDaConta);
+        this.limite = limite;
+    }
+
+    public ContaEspecial(String numeroDaConta) {
+        super(numeroDaConta);
+    } 
+
+    public ContaEspecial() {
+    }
+    
     @Override
     public void sacar(double valor) 
     {
